@@ -257,8 +257,8 @@ get_ipython().run_line_magic('matplotlib', 'inline')
 #%%
 t = torch.linspace(0.0, 2 * np.pi, 100)
 
-x = # your code here
-y = # your code here
+x = 16 * (torch.sin(t) ** 3)
+y = 13 * torch.cos(t) - 5 * torch.cos(2 * t) - 2* torch.cos(3* t) - torch.cos(4 * t)
 
 
 #%%
