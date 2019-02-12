@@ -276,6 +276,7 @@ x = torch.tensor(2.0, requires_grad=True)  # tells PyTorch that we'll need gradi
 f_x = x ** 2  # run our function
 f_x.backward()  # calculate gradient
 
+print("f_x = {}".format(x))
 print("df/dx = {}".format(x.grad))
 
 #%% [markdown]
@@ -291,7 +292,7 @@ boston = load_boston()
 
 plt.scatter(boston.data[:, -1], boston.target)
 plt.xlabel("x")
-plt.ylabel("y");
+plt.ylabel("y")
 
 #%% [markdown]
 # Convert data to torch tensors:
